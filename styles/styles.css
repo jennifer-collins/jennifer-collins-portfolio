@@ -235,6 +235,18 @@ html {
   overflow: hidden;
 }
 
+/* Site Fonts */
+@font-face {
+  font-family: "Bigilla";
+  src: url("../assets/fonts/bigella/OTF/Bigilla-Bold.otf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Bigilla";
+  src: url("../assets/fonts/bigella/OTF/Bigilla.otf");
+  font-weight: normal;
+}
+/* Site Colours */
 /* Site Text */
 html {
   font-size: 125%;
@@ -273,9 +285,9 @@ h4 {
   font-size: 3.15rem;
   letter-spacing: 0.9px;
   font-weight: 400;
+  font-family: "Bigilla";
 }
 
-/* Site Colours */
 ul {
   list-style: none;
 }
