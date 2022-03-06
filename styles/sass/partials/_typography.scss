@@ -9,7 +9,8 @@ body {
     font-size: 0.7rem;
     // color: #16100E;
     // color: #FFF;
-    line-height: 28px;
+    // change this to specific section
+        // line-height: 28px;
     font-family: $bodyFont;
 }
 
@@ -66,4 +67,5 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+    line-height: 28px;
 }

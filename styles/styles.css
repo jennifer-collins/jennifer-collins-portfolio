@@ -256,7 +256,6 @@ html {
 body {
   font-weight: 400;
   font-size: 0.7rem;
-  line-height: 28px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -308,6 +307,7 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+  line-height: 28px;
 }
 
 * {
@@ -328,14 +328,22 @@ ul {
 header {
   background-color: #C9CABD;
   height: 80vh;
-  background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .mainNav {
-  padding: 2% 2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100vw;
+  border-bottom: 2px solid #D8D8D8;
+  top: 10px;
 }
 .mainNav ul {
   display: -webkit-box;
@@ -348,18 +356,54 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 5%;
 }
 .mainNav ul li {
-  margin: 0 3%;
+  margin: 0 7%;
+}
+
+.logo {
+  padding-left: 2%;
 }
 
 .headingSpan {
   display: block;
 }
 
+.headerContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.backgroundBox {
+  width: 30%;
+}
+
+.headerBackgroundImage {
+  background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 70%;
+  height: 80vh;
+}
+
+header .textContainer {
+  position: absolute;
+  bottom: 40%;
+  left: 10%;
+}
+
 .about {
   background-color: #202316;
-  height: 80vh;
   padding: 5% 0;
 }
 .about h2 {
@@ -390,6 +434,10 @@ header {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-left: 20%;
+}
+.contentContainer .textContainer p {
+  margin-bottom: 5%;
 }
 
 .taglineSpan {

@@ -1,34 +1,63 @@
 header {
     background-color: $backgroundPrimary;
     height: 80vh;
-    background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
 }
 
 .mainNav{
-    padding: 2% 2%;
+    // padding: 2% 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    // background-color: $backgroundPrimary;
+    width: 100vw;
+    border-bottom: 2px solid $lineColor;
+    top: 10px;
     ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        align-items: center;
+        padding-right: 5%;
         li {
-            margin: 0 3%;
+            margin: 0 7%;
         }
     }
+}
+
+.logo {
+    padding-left: 2%;
 }
 
 .headingSpan {
     display: block;
 }
 
-// .headerBackgroundImage {
-//     background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center;
-//     width: 50%;
-//     // height: auto;
-//     height: 60vh;
-// }
+.headerContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.backgroundBox {
+    width: 30%;
+}
+
+.headerBackgroundImage {
+    background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    // height: 100%;
+    height: 80vh;
+}
+
+header .textContainer {
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
