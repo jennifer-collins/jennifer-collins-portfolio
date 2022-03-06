@@ -69,3 +69,23 @@ h4 {
     font-weight: 300;
     line-height: 28px;
 }
+
+.skills h2 {
+    color: $textColourPrimary;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.skillsList p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+footer p {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+    color: #FFF;        
+    }

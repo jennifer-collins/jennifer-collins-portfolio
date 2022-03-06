@@ -310,6 +310,26 @@ h4 {
   line-height: 28px;
 }
 
+.skills h2 {
+  color: #16100E;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.skillsList p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+footer p {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+  color: #FFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -323,6 +343,11 @@ h4 {
 
 ul {
   list-style: none;
+}
+
+footer {
+  background-color: #202316;
+  padding: 1%;
 }
 
 header {
@@ -428,9 +453,10 @@ header .textContainer {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-right: 5%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -438,8 +464,57 @@ header .textContainer {
 }
 .contentContainer .textContainer p {
   margin-bottom: 5%;
+  line-height: 28px;
 }
 
 .taglineSpan {
   display: block;
+}
+
+.skills {
+  background-color: #C9CABD;
+  padding: 5% 0;
+}
+
+.skillsList {
+  padding-bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+.skillsList li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skillsList i {
+  font-size: 4rem;
+  color: #FFF;
+  padding-bottom: 10%;
+}
+.skillsList i:hover, .skillsList i:focus {
+  color: #202316;
+}
+
+.contact {
+  background-color: #C9CABD;
 }
