@@ -1,0 +1,34 @@
+header {
+    background-color: $backgroundPrimary;
+    height: 80vh;
+    background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mainNav{
+    padding: 2% 2%;
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        li {
+            margin: 0 3%;
+        }
+    }
+}
+
+.headingSpan {
+    display: block;
+}
+
+// .headerBackgroundImage {
+//     background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-position: center;
+//     width: 50%;
+//     // height: auto;
+//     height: 60vh;
+// }

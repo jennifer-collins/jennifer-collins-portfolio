@@ -7,10 +7,14 @@ html {
 body {
     font-weight: 400;
     font-size: 0.7rem;
-    color: #16100E;
+    // color: #16100E;
     // color: #FFF;
     line-height: 28px;
     font-family: $bodyFont;
+}
+
+h1, h2, h3, h4 {
+    font-family: $headingFont;
 }
 
 h1 {
@@ -20,11 +24,12 @@ h1 {
     // font-size: 7.15rem;
     font-size: 5rem;
     font-weight: 400;
-    font-family: $headingFont;
+    line-height: 95px;
 }
 
 h2 {
     color: #FFF;
+    // color: black;
     font-size: 5rem;
     letter-spacing: 1.43px;
     font-weight: 400;
@@ -44,7 +49,21 @@ h4 {
     font-size: 3.15rem;
     letter-spacing: 0.9px;
     font-weight: 400;
-    font-family: $headingFont;
 }
 
+.mainNav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #16100E;
+    letter-spacing: 2px;
+}
 
+.about p {
+    color: #FFF;
+}
+
+.tagline {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -246,11 +247,6 @@ html {
   src: url("../assets/fonts/bigella/OTF/Bigilla.otf");
   font-weight: normal;
 }
-@font-face {
-  font-family: "Open Sans";
-  src: url("../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
-  font-weight: normal;
-}
 /* Site Colours */
 /* Site Text */
 html {
@@ -260,9 +256,12 @@ html {
 body {
   font-weight: 400;
   font-size: 0.7rem;
-  color: #16100E;
   line-height: 28px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Bigilla";
 }
 
 h1 {
@@ -270,7 +269,7 @@ h1 {
   color: #16100E;
   font-size: 5rem;
   font-weight: 400;
-  font-family: "Bigilla";
+  line-height: 95px;
 }
 
 h2 {
@@ -292,9 +291,107 @@ h4 {
   font-size: 3.15rem;
   letter-spacing: 0.9px;
   font-weight: 400;
-  font-family: "Bigilla";
+}
+
+.mainNav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #16100E;
+  letter-spacing: 2px;
+}
+
+.about p {
+  color: #FFF;
+}
+
+.tagline {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 ul {
   list-style: none;
+}
+
+header {
+  background-color: #C9CABD;
+  height: 80vh;
+  background-image: url(../assets/images/kari-shea-1SAnrIxw5OY-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.mainNav {
+  padding: 2% 2%;
+}
+.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.mainNav ul li {
+  margin: 0 3%;
+}
+
+.headingSpan {
+  display: block;
+}
+
+.about {
+  background-color: #202316;
+  height: 80vh;
+  padding: 5% 0;
+}
+.about h2 {
+  text-align: center;
+  padding: 5% 0;
+}
+
+.contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contentContainer .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.taglineSpan {
+  display: block;
 }

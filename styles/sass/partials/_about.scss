@@ -1,0 +1,25 @@
+.about {
+    background-color: $backgroundSecondary;
+    height: 80vh;
+    padding: 5% 0;
+    h2 {
+        text-align: center;
+        padding: 5% 0;
+    }
+}
+
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.taglineSpan {
+    display: block;
+}

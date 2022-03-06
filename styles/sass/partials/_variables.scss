@@ -11,14 +11,16 @@
     font-weight: normal;
 }
 
-@font-face {
-    font-family: "Open Sans";
-    src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
-    font-weight: normal;
-}
+// @font-face {
+//     font-family: "Open Sans";
+//     src: url('../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf');
+//     font-weight: normal;
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 $headingFont: "Bigilla";
-$bodyFont: "Open Sans";
+$bodyFont: 'Open Sans', sans-serif;
 
 /* Site Colours */
 

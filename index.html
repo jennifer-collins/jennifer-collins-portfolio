@@ -13,41 +13,51 @@
     <header>
         <nav class="mainNav">
             <ul>
-                <li>
+                <li class="logo">
                     <h4>JC</h4>
                 </li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
             </ul>
         </nav>
 
         <!-- possibly update background color only on header and set a width on the headerBackgroundImage div -->
         <div class="backgroundBox"></div>
         <div class="headerBackgroundImage"></div>
-
-        <div class="textContainer">
+        
+        <!-- <div class="textContainer">
             <h1>Jennifer Collins<span class="headingSpan">Front-End Web Developer</span></h1>
-        </div>
+        </div> -->
         
     </header>
-
+    
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <h2>About Me</h2>
                 <div class="sideText">
-                    <p class="tagline">(01)<span class="taglineSpan">About Jennifer</span></p>
+                    <p class="tagline">(01)<span class="taglineSpan">/ About Jennifer</span></p>
                 </div>
-                <div class="textContainer">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum sapiente debitis totam nesciunt laudantium. Molestias quo asperiores quasi minima deserunt ab tempora ratione accusamus adipisci at, vitae deleniti voluptatibus quae impedit odit cum distinctio! Quasi, natus? Molestias cum sapiente dicta tempora minus illum veniam laborum fugit reiciendis enim. Corporis, eligendi?</p>
-                    <!-- Possibly change this to an <a> and style like a button -->
-                    <button>resume</button>
-                </div>
-                <div class="imageContainer">
-                    <img src="https://picsum.photos/368/495" alt="placeholder image">
-                </div>
+                <div class="contentContainer">
+                    <div class="textContainer">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum sapiente debitis totam nesciunt laudantium. Molestias quo asperiores quasi minima deserunt ab tempora ratione accusamus adipisci at, vitae deleniti voluptatibus quae impedit odit cum distinctio! Quasi, natus? Molestias cum sapiente dicta tempora minus illum veniam laborum fugit reiciendis enim. Corporis, eligendi?</p>
+                        <!-- Possibly change this to an <a> and style like a button -->
+                        <button>resume</button>
+                    </div>
+                    <div class="imageContainer">
+                        <img src="https://picsum.photos/368/495" alt="placeholder image">
+                    </div>
+                </div><!-- END .contentContainer -->
             </div><!-- END .wrapper -->
         </section><!-- END .about Section -->
 
@@ -99,7 +109,7 @@
             </div><!-- END .wrapper -->
         </section><!-- END .skills Section -->
 
-        <section class="featuredProjects">
+        <section class="featuredProjects" id="projects">
             <div class="wrapper">
                 <div class="project1">
                     <div class="imageContainer">
@@ -133,7 +143,7 @@
             </div><!-- END .wrapper -->
         </section><!-- END .projects Section -->
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <div class="contactContainer">
                     <div class="contactText">
