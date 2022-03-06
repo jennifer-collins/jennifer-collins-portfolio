@@ -55,12 +55,35 @@ h4 {
 .mainNav a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #16100E;
+    color: $textColourPrimary;
     letter-spacing: 2px;
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid $textColourPrimary;
+    }
 }
 
 .about p {
     color: #FFF;
+}
+
+.about a {
+    background-color: $backgroundSecondary;
+    border: 1px solid #FFF;
+    font-family: $bodyFont;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 2% 5%;
+    border-radius: 30px;
+    text-decoration: none;
+    // outline: none;
+    &:hover,
+    &:focus {
+        background-color: $backgroundPrimary;
+        border: 1px solid $textColourPrimary;
+        color: $textColourPrimary;
+    }
 }
 
 .tagline {
@@ -80,6 +103,12 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+}
+
+.featuredProjects a {
+    font-family: $headingFont;
+    font-size: 1rem;
+    color: #FFF;
 }
 
 footer p {

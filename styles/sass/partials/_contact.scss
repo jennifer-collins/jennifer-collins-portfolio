@@ -1,3 +1,51 @@
 .contact {
     background-color: $backgroundPrimary;
+    padding: 5%;
+}
+
+.contactContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.contactText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+// Form Styling
+
+input, textarea {
+    padding: 0 0 10px 5px;
+    border: none;
+    margin-bottom: 5%;
+    color: #333;
+    background-color: $backgroundPrimary;
+    font-family: $bodyFont;
+    &::placeholder{
+        font-size: 0.8rem;
+        color: $textColourPrimary;
+        opacity: 1;
+        // line-height: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid $lineColor; 
+}
+
+textarea {
+    resize: none;
+    min-height: 130px;
+    border-bottom: 2px solid $lineColor;
+    border-top: none;
 }

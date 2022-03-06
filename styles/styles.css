@@ -298,9 +298,29 @@ h4 {
   color: #16100E;
   letter-spacing: 2px;
 }
+.mainNav a:hover, .mainNav a:focus {
+  border-bottom: 1px solid #16100E;
+}
 
 .about p {
   color: #FFF;
+}
+
+.about a {
+  background-color: #202316;
+  border: 1px solid #FFF;
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2% 5%;
+  border-radius: 30px;
+  text-decoration: none;
+}
+.about a:hover, .about a:focus {
+  background-color: #C9CABD;
+  border: 1px solid #16100E;
+  color: #16100E;
 }
 
 .tagline {
@@ -320,6 +340,12 @@ h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
+}
+
+.featuredProjects a {
+  font-family: "Bigilla";
+  font-size: 1rem;
+  color: #FFF;
 }
 
 footer p {
@@ -343,6 +369,22 @@ footer p {
 
 ul {
   list-style: none;
+}
+
+button {
+  background-color: #202316;
+  border: 1px solid #FFF;
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 2% 5%;
+  border-radius: 30px;
+}
+button:hover, button:focus {
+  background-color: #C9CABD;
+  border: 1px solid #16100E;
+  color: #16100E;
 }
 
 footer {
@@ -487,9 +529,9 @@ header .textContainer {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .skillsList li {
@@ -501,9 +543,8 @@ header .textContainer {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 20%;
+  padding-bottom: 5%;
 }
 
 .skillsList i {
@@ -515,6 +556,108 @@ header .textContainer {
   color: #202316;
 }
 
+.project1 {
+  background-color: #202316;
+}
+
+.project2 {
+  background-color: #C9CABD;
+}
+
+.project3 {
+  background-color: #202316;
+}
+
 .contact {
   background-color: #C9CABD;
+  padding: 5%;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+input, textarea {
+  padding: 0 0 10px 5px;
+  border: none;
+  margin-bottom: 5%;
+  color: #333;
+  background-color: #C9CABD;
+  font-family: "Open Sans", sans-serif;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  font-size: 0.8rem;
+  color: #16100E;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  font-size: 0.8rem;
+  color: #16100E;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #16100E;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  font-size: 0.8rem;
+  color: #16100E;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+input::placeholder, textarea::placeholder {
+  font-size: 0.8rem;
+  color: #16100E;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+textarea {
+  resize: none;
+  min-height: 130px;
+  border-bottom: 2px solid #D8D8D8;
+  border-top: none;
 }
