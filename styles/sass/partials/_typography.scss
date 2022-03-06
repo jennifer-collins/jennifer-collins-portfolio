@@ -10,15 +10,17 @@ body {
     color: #16100E;
     // color: #FFF;
     line-height: 28px;
-    // $headingFont: "Bigilla";
+    font-family: $bodyFont;
 }
 
 h1 {
     letter-spacing: 2.04px;
     color: #16100E;
     // color: #FFF;
-    font-size: 7.15rem;
+    // font-size: 7.15rem;
+    font-size: 5rem;
     font-weight: 400;
+    font-family: $headingFont;
 }
 
 h2 {

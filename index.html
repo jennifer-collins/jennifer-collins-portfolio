@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+    <script src="https://kit.fontawesome.com/72f68e5874.js" crossorigin="anonymous"></script>
     <title>Jennifer Collins | Web Developer</title>
 </head>
 <body>
@@ -21,7 +23,172 @@
             </ul>
         </nav>
 
+        <!-- possibly update background color only on header and set a width on the headerBackgroundImage div -->
+        <div class="backgroundBox"></div>
+        <div class="headerBackgroundImage"></div>
 
+        <div class="textContainer">
+            <h1>Jennifer Collins<span class="headingSpan">Front-End Web Developer</span></h1>
+        </div>
+        
     </header>
+
+    <main>
+        <section class="about">
+            <div class="wrapper">
+                <h2>About Me</h2>
+                <div class="sideText">
+                    <p class="tagline">(01)<span class="taglineSpan">About Jennifer</span></p>
+                </div>
+                <div class="textContainer">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum sapiente debitis totam nesciunt laudantium. Molestias quo asperiores quasi minima deserunt ab tempora ratione accusamus adipisci at, vitae deleniti voluptatibus quae impedit odit cum distinctio! Quasi, natus? Molestias cum sapiente dicta tempora minus illum veniam laborum fugit reiciendis enim. Corporis, eligendi?</p>
+                    <!-- Possibly change this to an <a> and style like a button -->
+                    <button>resume</button>
+                </div>
+                <div class="imageContainer">
+                    <img src="https://picsum.photos/368/495" alt="placeholder image">
+                </div>
+            </div><!-- END .wrapper -->
+        </section><!-- END .about Section -->
+
+        <section class="skills">
+            <div class="wrapper">
+                <h2>My Skills</h2>
+                <ul class="skillsList">
+                    <li>
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <i class="devicon-sass-original"></i>
+                        <p>SCSS</p>
+                    </li>
+                    <li>
+                        <i class="devicon-javascript-plain"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <!-- <li>
+                        <i></i>
+                        <p>jQuery</p>
+                    </li> -->
+                    <li>
+                        <i class="devicon-react-original"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="devicon-github-original"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-universal-access"></i>
+                        <p>Accessibility</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Responsive Design</p>
+                    </li>
+                </ul>
+            </div><!-- END .wrapper -->
+        </section><!-- END .skills Section -->
+
+        <section class="featuredProjects">
+            <div class="wrapper">
+                <div class="project1">
+                    <div class="imageContainer">
+                        <img src="https://picsum.photos/200/300" alt="placeholder image">
+                    </div>
+                    <h3 class="projectTitle">storytime</h3>
+                    <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio hic, necessitatibus recusandae reprehenderit a illo ullam repellat quod rerum.</p>
+                    <button>View Live</button>
+                    <button>GitHub</button>
+                </div><!-- END .project1 -->
+
+                <div class="project2">
+                    <div class="imageContainer">
+                        <img src="https://picsum.photos/200/300" alt="placeholder image">
+                    </div>
+                    <h3 class="projectTitle">harper</h3>
+                    <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio hic, necessitatibus recusandae reprehenderit a illo ullam repellat quod rerum.</p>
+                    <button>View Live</button>
+                    <button>GitHub</button>
+                </div><!-- END .project2 -->
+
+                <div class="project3">
+                    <div class="imageContainer">
+                        <img src="https://picsum.photos/200/300" alt="placeholder image">
+                    </div>
+                    <h3 class="projectTitle">it's a beautiful day</h3>
+                    <p class="projectDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio hic, necessitatibus recusandae reprehenderit a illo ullam repellat quod rerum.</p>
+                    <button>View Live</button>
+                    <button>GitHub</button>
+                </div><!-- END .project3 -->
+            </div><!-- END .wrapper -->
+        </section><!-- END .projects Section -->
+
+        <section class="contact">
+            <div class="wrapper">
+                <div class="contactContainer">
+                    <div class="contactText">
+                        <h3>Contact Me</h3>
+                        <p>If you'd like to have a coffee chat (virtual or in-person), talk more about my projects or just want to get to know me, send me a message. I look forward to hearing from you!</p>
+                        <!-- email link here or below in list item, decide once styling is complete -->
+                        <a href="mailto:collins.jennifer988@gmail.com">collins.jennifer988@gmail.com</a>
+                        <ul class="socialIcons">
+                            <li>
+                                <a href="https://www.linkedin.com/in/jennifer-collins/" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/jennifer-collins" target="_blank" rel="noopener">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:collins.jennifer988@gmail.com" target="_blank" rel="noopener">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="">
+                                    <i></i>
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div><!-- END .contactText -->
+
+                    <div class="contactForm">
+                        <form action="">
+        
+                            <label class="sr-only" for="name">Name</label>
+                            <input type="text" placeholder="Name">
+        
+                            <label class="sr-only" for="email"Email></label>
+                            <input type="email" name="email" id="email" placeholder="Email">
+        
+                            <label class="sr-only" for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div><!-- END .contactForm -->
+                </div><!-- END .contactContainer -->
+
+            </div><!-- END .wrapper -->
+        </section><!-- END .contact Section -->
+    </main>
+
+    <footer>
+        <p>Developed by Jennifer Collins & Designed by Skolastika Phoebe</p>
+    </footer>
+
 </body>
 </html>

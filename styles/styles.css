@@ -246,6 +246,11 @@ html {
   src: url("../assets/fonts/bigella/OTF/Bigilla.otf");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Open Sans";
+  src: url("../assets/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf");
+  font-weight: normal;
+}
 /* Site Colours */
 /* Site Text */
 html {
@@ -257,13 +262,15 @@ body {
   font-size: 0.7rem;
   color: #16100E;
   line-height: 28px;
+  font-family: "Open Sans";
 }
 
 h1 {
   letter-spacing: 2.04px;
   color: #16100E;
-  font-size: 7.15rem;
+  font-size: 5rem;
   font-weight: 400;
+  font-family: "Bigilla";
 }
 
 h2 {
