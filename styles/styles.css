@@ -387,6 +387,10 @@ footer p {
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
