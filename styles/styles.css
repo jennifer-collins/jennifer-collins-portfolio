@@ -330,6 +330,21 @@ h4 {
   line-height: 28px;
 }
 
+.project4 .tagline, h3 {
+  color: #FFF;
+  padding-bottom: 5%;
+}
+
+.projectDescription {
+  line-height: 28px;
+}
+
+.taglineNumber {
+  line-height: 28px;
+  border-bottom: 1px solid #D8D8D8;
+  letter-spacing: 2px;
+}
+
 .skills h2 {
   color: #16100E;
   text-align: center;
@@ -346,6 +361,9 @@ h4 {
   font-family: "Bigilla";
   font-size: 1rem;
   color: #FFF;
+  padding: 2% 5% 2% 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 footer p {
@@ -365,6 +383,10 @@ footer p {
   max-width: 1260px;
   width: 90%;
   margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
 }
 
 ul {
@@ -478,7 +500,7 @@ header .textContainer {
   padding: 5% 0;
 }
 
-.contentContainer {
+.about .contentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,7 +508,7 @@ header .textContainer {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contentContainer .textContainer {
+.about .contentContainer .textContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,7 +526,7 @@ header .textContainer {
           justify-content: flex-end;
   padding-left: 20%;
 }
-.contentContainer .textContainer p {
+.about .contentContainer .textContainer p {
   margin-bottom: 5%;
   line-height: 28px;
 }
@@ -562,10 +584,133 @@ header .textContainer {
 
 .project2 {
   background-color: #C9CABD;
+  padding: 10% 0;
 }
 
+.project2 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.project2 .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 5%;
+  width: 50%;
+}
+.project2 .contentContainer .projectFrameworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+.project2 .contentContainer .projectFrameworks li {
+  margin-left: 2%;
+  letter-spacing: 2px;
+}
+
+.featuredProjects .textContainer p,
+.featuredProjects .textContainer a {
+  margin-bottom: 5%;
+  color: #FFF;
+}
+
+.project2 .imageContainer {
+  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project2 .imageContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.project4,
 .project3 {
+  padding: 10% 0;
   background-color: #202316;
+}
+
+.project4 .wrapper,
+.project3 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.project4 .contentContainer,
+.project3 .contentContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 5%;
+  width: 50%;
+}
+.project4 .contentContainer .projectFrameworks,
+.project3 .contentContainer .projectFrameworks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 5%;
+}
+.project4 .contentContainer .projectFrameworks li,
+.project3 .contentContainer .projectFrameworks li {
+  margin-right: 2%;
+  letter-spacing: 2px;
+}
+
+.project4 .imageContainer,
+.project3 .imageContainer {
+  min-width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.project4 .imageContainer img,
+.project3 .imageContainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .contact {

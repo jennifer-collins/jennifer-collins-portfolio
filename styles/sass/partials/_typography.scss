@@ -93,6 +93,22 @@ h4 {
     line-height: 28px;
 }
 
+.project4 .tagline, h3 {
+    color: #FFF;
+    padding-bottom: 5%;
+}
+
+.projectDescription {
+    line-height: 28px;
+}
+
+.taglineNumber {
+    // padding-bottom: 0.5%;
+    line-height: 28px;
+    border-bottom: 1px solid $lineColor;
+    letter-spacing: 2px;
+}
+
 .skills h2 {
     color: $textColourPrimary;
     text-align: center;
@@ -109,6 +125,9 @@ h4 {
     font-family: $headingFont;
     font-size: 1rem;
     color: #FFF;
+    padding: 2% 5% 2% 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 footer p {

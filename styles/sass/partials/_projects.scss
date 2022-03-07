@@ -1,13 +1,130 @@
 .project1 {
     background-color: $backgroundSecondary;
+    // position: relative;
+    // h3 {
+    //     position: absolute;
+    //     bottom: 50%;
+    //     left: 25%;
+    // }
 }
 
+// .project1 .imageContainer {
+//     width: 60%;
+//     // position: relative;
+//     // img {
+//     //     position: relative;
+//     //     left: 50%;
+//     // }
+// }
+
+// .projectText {
+//     display: flex;
+//     flex-direction: row;
+// }
 
 
+// ----------------------------------------------------
 .project2 {
     background-color: $backgroundPrimary;
+    padding: 10% 0;
 }
 
+// add this to each wrapper to make code DRY
+.project2 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.project2 .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 5%;
+    width: 50%;
+    .projectFrameworks {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+        li {
+            margin-left: 2%;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+// update to all p/a for entire section
+.featuredProjects {
+    .textContainer p,
+    .textContainer a {
+        margin-bottom: 5%;
+        color: #FFF;
+    }
+}
+
+.project2 .imageContainer {
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    img {
+        object-fit: contain;
+    }
+}
+
+
+
+// ----------------------------------------------------
+
+// .project3 {
+//     background-color: $backgroundSecondary;
+// }
+
+.project4,
 .project3 {
+    // min-height: 80vh;
+    padding: 10% 0;
     background-color: $backgroundSecondary;
+}
+
+.project4 .wrapper,
+.project3 .wrapper {
+    display: flex;
+    justify-content: space-between;
+    // height: 80vh;
+}
+
+.project4 .contentContainer,
+.project3 .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    width: 50%;
+    .projectFrameworks {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 5%;
+        li {
+            margin-right: 2%;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+// .project4 {
+//     .textContainer p,
+//     .textContainer a {
+//         margin-bottom: 5%;
+//         color: #FFF;
+//     }
+// }
+
+.project4 .imageContainer,
+.project3 .imageContainer {
+    min-width: 40%;
+    display: flex;
+    justify-content: center;
+    img {
+        object-fit: contain;
+    }
 }
