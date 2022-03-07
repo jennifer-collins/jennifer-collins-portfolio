@@ -330,7 +330,7 @@ h4 {
   line-height: 28px;
 }
 
-.project4 .tagline, h3 {
+.featuredProjects .tagline, h3 {
   color: #FFF;
   padding-bottom: 5%;
 }
@@ -343,6 +343,10 @@ h4 {
   line-height: 28px;
   border-bottom: 1px solid #D8D8D8;
   letter-spacing: 2px;
+}
+
+.project2 .taglineNumber {
+  border-bottom: 1px solid #16100E;
 }
 
 .skills h2 {
@@ -364,6 +368,10 @@ h4 {
   padding: 2% 5% 2% 0;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.featuredProjects .project2 .textContainer * {
+  color: #16100E;
 }
 
 footer p {
@@ -594,10 +602,10 @@ header .textContainer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .project2 .contentContainer {
@@ -625,7 +633,7 @@ header .textContainer {
   margin-bottom: 5%;
 }
 .project2 .contentContainer .projectFrameworks li {
-  margin-left: 2%;
+  margin-right: 2%;
   letter-spacing: 2px;
 }
 

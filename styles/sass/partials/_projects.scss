@@ -33,7 +33,7 @@
 .project2 .wrapper {
     display: flex;
     justify-content: space-between;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
 }
 
 .project2 .contentContainer {
@@ -47,7 +47,7 @@
         flex-direction: row;
         margin-bottom: 5%;
         li {
-            margin-left: 2%;
+            margin-right: 2%;
             letter-spacing: 2px;
         }
     }
