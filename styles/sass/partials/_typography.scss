@@ -7,10 +7,11 @@ html {
 body {
     font-weight: 400;
     font-size: 0.7rem;
+    // font-size: 1rem;
     // color: #16100E;
     // color: #FFF;
     // change this to specific section
-        // line-height: 28px;
+    // line-height: 28px;
     font-family: $bodyFont;
 }
 
@@ -22,10 +23,12 @@ h1 {
     letter-spacing: 2.04px;
     color: #16100E;
     // color: #FFF;
-    // font-size: 7.15rem;
-    font-size: 5rem;
+    font-size: 4.5rem;
+    // font-size: 5rem;
     font-weight: 400;
-    line-height: 95px;
+    margin: 0;
+    // padding-bottom: 1%;
+    // line-height: 95px;
 }
 
 h2 {
@@ -63,8 +66,15 @@ h4 {
     }
 }
 
+.titleHeader {
+    color: $textColourPrimary;
+    font-size: 3rem;
+    padding: 0;
+}
+
 .about p {
     color: #FFF;
+    font-size: 1rem;
 }
 
 .about a {
@@ -100,6 +110,7 @@ h4 {
 
 .projectDescription {
     line-height: 28px;
+    font-size: 1rem;
 }
 
 .taglineNumber {
@@ -123,11 +134,12 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 .featuredProjects a {
     font-family: $headingFont;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #FFF;
     padding: 2% 5% 2% 0;
     text-transform: uppercase;
@@ -151,5 +163,6 @@ footer p {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
-    color: #FFF;        
+    color: #FFF;
+    font-size: 1rem;        
     }
