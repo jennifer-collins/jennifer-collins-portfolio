@@ -8,23 +8,33 @@
     }
 }
 
+.sideText {
+    margin-bottom: 5%;
+}
+
 .about .contentContainer {
     display: flex;
     justify-content: space-between;
     .textContainer {
         display: flex;
         flex-direction: column;
-        margin-right: 5%;
+        // margin-right: 5%;
         // align-items: center;
         align-items: flex-end;
         text-align: right;
         justify-content: flex-end;
-        padding-left: 20%;
+        padding: 0 5%;
+        // padding-left: 20%;
+        width: 100%;
         p {
             margin-bottom: 5%;
             line-height: 28px;
         }
     }
+}
+
+.about .imageContainer {
+    width: 35%;
 }
 
 .taglineSpan {

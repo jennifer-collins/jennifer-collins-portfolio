@@ -525,6 +525,10 @@ header .textContainer {
   padding: 5% 0;
 }
 
+.sideText {
+  margin-bottom: 5%;
+}
+
 .about .contentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -541,7 +545,6 @@ header .textContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 5%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -549,11 +552,16 @@ header .textContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding-left: 20%;
+  padding: 0 5%;
+  width: 100%;
 }
 .about .contentContainer .textContainer p {
   margin-bottom: 5%;
   line-height: 28px;
+}
+
+.about .imageContainer {
+  width: 35%;
 }
 
 .taglineSpan {
@@ -764,7 +772,7 @@ header .textContainer {
   width: 40%;
 }
 .contactText p {
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 1rem;
@@ -862,4 +870,166 @@ textarea {
   min-height: 130px;
   border-bottom: 2px solid #D8D8D8;
   border-top: none;
+}
+
+@media (max-width: 1000px) {
+  .headerBackgroundImage {
+    width: 100%;
+  }
+
+  .backgroundBox {
+    width: 0;
+  }
+
+  .contactText {
+    width: 45%;
+  }
+  .contactText h3 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 900px) {
+  .skillsList li {
+    margin: 0 1% 0 1%;
+    width: 25%;
+  }
+
+  .project4 .wrapper,
+.project3 .wrapper,
+.project2 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .project4 .contentContainer,
+.project3 .contentContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .project2 .contentContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .about .contentContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .about .contentContainer .textContainer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .about .textContainer p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .contactText {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #202316;
+    padding-bottom: 5%;
+  }
+
+  .contactText,
+.contactForm {
+    width: 100%;
+  }
+
+  .contactForm button {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .about .contentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .about .imageContainer {
+    width: 50%;
+    margin-bottom: 3%;
+  }
+
+  .skills .skillsList p {
+    font-size: 0.8rem;
+  }
+
+  .project4 .contentContainer, .project3 .contentContainer {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 600px) {
+  .skillsList li {
+    width: 35%;
+  }
+
+  footer {
+    padding: 3%;
+  }
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 500px) {
+  .about .textContainer p {
+    font-size: 0.8rem;
+  }
+
+  .about .textContainer a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .projectFrameworks p {
+    font-size: 0.8rem;
+  }
+
+  .featuredProjects h3 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 420px) {
+  .about .textContainer p {
+    font-size: 0.7rem;
+    line-height: 24px;
+  }
+
+  .skills .skillsList p {
+    font-size: 0.7rem;
+  }
+
+  .skillsList li {
+    margin: 0 4% 0 4%;
+  }
 }

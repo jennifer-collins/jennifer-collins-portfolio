@@ -1,14 +1,173 @@
 @media (max-width: 1000px){
-    
+
+.headerBackgroundImage {
+    width: 100%;
 }
 
+.backgroundBox {
+    width: 0;
+}
+
+.contactText{
+    width: 45%;
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+
+}
+
+@media (max-width: 900px) {
+.skillsList li {
+    margin: 0 1% 0 1%;
+    width: 25%;
+}
+
+.project4 .wrapper,
+.project3 .wrapper,
+.project2 .wrapper {
+    flex-direction: column;
+}
+
+.project4 .contentContainer,
+.project3 .contentContainer{
+    justify-content: center;
+    margin-left: 0;
+    width: 100%;
+    align-items: center;
+}
+
+.project2 .contentContainer {
+    justify-content: center;
+    margin: 0 auto;
+    // width: 88%;
+    width: 100%;
+    align-items: center;
+}
+
+// .project3 .textContainer {
+//     width: 87%;
+// }
+
+
+
+}
+
+
+
 @media (max-width: 800px){
+.about .contentContainer {
+    flex-direction: row-reverse;
+    .textContainer {
+        align-items: flex-start;
+    }
+}
+.about .textContainer p {
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.contactContainer {
+    flex-direction: column;
+    .contactText {
+        margin-bottom: 5%;
+        border-bottom: 1px solid $backgroundSecondary;
+        padding-bottom: 5%;
+    }
+}
+
+.contactText,
+.contactForm {
+    width: 100%;
+}
+
+.contactForm button {
+    width: 100%;
+}
+// .contactText {
+//     border-bottom: 1px solid $backgroundSecondary;
+//     padding-bottom: 5%;
+// }
+
+}
+
+@media (max-width: 700px) {
+
+.about .contentContainer {
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.about .imageContainer {
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+.skills .skillsList p {
+    font-size: 0.8rem;
+}
+
+.project4 .contentContainer, .project3 .contentContainer {
+    // width: 80%;
+    margin: 0 auto;
+}
+
+}
+
+
+@media (max-width: 600px){
+    .skillsList li {
+        width: 35%;
+    }
+
+    footer {
+        padding: 3%;
+        p {
+            font-size: 0.8rem;
+        }
+    }
 
 }
 
 @media (max-width: 500px){
-    
+.about .textContainer p {
+    font-size: 0.8rem;
 }
+
+.about .textContainer {
+    a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.projectFrameworks p {
+    font-size: 0.8rem;
+}
+
+.featuredProjects h3 {
+    font-size: 2.8rem;
+}
+
+
+}
+
+@media (max-width: 420px){
+    .about .textContainer p {
+    font-size: 0.7rem;
+    line-height: 24px;
+}
+
+.skills .skillsList p {
+    font-size: 0.7rem;
+}
+.skillsList li {
+    margin: 0 4% 0 4%;
+}
+
+}
+
 
 @media (max-width: 320px){
     
