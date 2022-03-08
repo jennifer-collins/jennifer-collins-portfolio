@@ -738,29 +738,27 @@ header .textContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.contactText {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+.contactText {
+  width: 40%;
+}
+
 .contactForm {
+  width: 50%;
+}
+
+.socialIcons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 input, textarea {
@@ -770,6 +768,7 @@ input, textarea {
   color: #333;
   background-color: #C9CABD;
   font-family: "Open Sans", sans-serif;
+  width: 100%;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 0.8rem;
@@ -805,6 +804,9 @@ input::placeholder, textarea::placeholder {
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+input:hover, input:focus, textarea:hover, textarea:focus {
+  border-bottom: 2px solid #202316;
 }
 
 input {
