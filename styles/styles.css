@@ -504,6 +504,12 @@ header .textContainer {
   left: 10%;
 }
 
+.scrollActive {
+  background-color: #C9CABD;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+
 .about {
   background-color: #202316;
   padding: 5% 0;

@@ -61,3 +61,8 @@ header .textContainer {
     bottom: 40%;
     left: 10%;
 }
+
+.scrollActive {
+    background-color: $backgroundPrimary;
+    transition: background-color 0.2s linear;
+}
