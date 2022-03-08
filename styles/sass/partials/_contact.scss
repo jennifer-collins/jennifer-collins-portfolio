@@ -14,6 +14,21 @@
     // flex-direction: column;
     // justify-content: space-between;
     width: 40%;
+    p {
+        margin-bottom: 5%;
+        letter-spacing: 1px;
+        line-height: 28px;
+    }
+    a {
+        margin-bottom: 2%;
+        text-decoration: none;
+        letter-spacing: 1px;
+        color: $textColourPrimary;
+        &:hover,
+        &:focus {
+            border-bottom: 1px solid $backgroundSecondary;
+        }
+    }
 }
 
 .contactForm {
@@ -25,6 +40,18 @@
 .socialIcons {
     display: flex;
     flex-direction: row;
+    margin-top: 2%;
+    li {
+        margin-right: 5%;
+    }
+    i {
+        font-size: 2rem;
+        color: #FFF;
+        &:hover,
+        &:focus {
+            color: $backgroundSecondary;
+        }
+    }
 }
 
 

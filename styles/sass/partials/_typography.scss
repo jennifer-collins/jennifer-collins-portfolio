@@ -38,10 +38,10 @@ h2 {
 
 h3 {
     color: #16100E;
-    // color: #FFF;
     font-size: 3.47rem;
-    letter-spacing: 0.99px;
+    letter-spacing: 1px;
     font-weight: 400;
+    padding-bottom: 5%;
 }
 
 h4 {
@@ -93,9 +93,9 @@ h4 {
     line-height: 28px;
 }
 
-.featuredProjects .tagline, h3 {
+.featuredProjects .tagline,
+.featuredProjects h3 {
     color: #FFF;
-    padding-bottom: 5%;
 }
 
 .projectDescription {

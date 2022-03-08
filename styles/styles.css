@@ -281,8 +281,9 @@ h2 {
 h3 {
   color: #16100E;
   font-size: 3.47rem;
-  letter-spacing: 0.99px;
+  letter-spacing: 1px;
   font-weight: 400;
+  padding-bottom: 5%;
 }
 
 h4 {
@@ -330,9 +331,9 @@ h4 {
   line-height: 28px;
 }
 
-.featuredProjects .tagline, h3 {
+.featuredProjects .tagline,
+.featuredProjects h3 {
   color: #FFF;
-  padding-bottom: 5%;
 }
 
 .projectDescription {
@@ -746,6 +747,20 @@ header .textContainer {
 .contactText {
   width: 40%;
 }
+.contactText p {
+  margin-bottom: 5%;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+.contactText a {
+  margin-bottom: 2%;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: #16100E;
+}
+.contactText a:hover, .contactText a:focus {
+  border-bottom: 1px solid #202316;
+}
 
 .contactForm {
   width: 50%;
@@ -759,6 +774,17 @@ header .textContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-top: 2%;
+}
+.socialIcons li {
+  margin-right: 5%;
+}
+.socialIcons i {
+  font-size: 2rem;
+  color: #FFF;
+}
+.socialIcons i:hover, .socialIcons i:focus {
+  color: #202316;
 }
 
 input, textarea {
