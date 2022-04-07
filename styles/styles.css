@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
 
 h1 {
   letter-spacing: 2.04px;
-  color: #16100E;
+  color: #FFF;
   font-size: 4.5rem;
   font-weight: 400;
   margin: 0;
@@ -291,6 +291,7 @@ h4 {
   font-size: 3.15rem;
   letter-spacing: 0.9px;
   font-weight: 400;
+  padding: 10% 0;
 }
 
 .mainNav a {
@@ -455,7 +456,7 @@ header {
   position: fixed;
   width: 100vw;
   border-bottom: 2px solid #D8D8D8;
-  top: 10px;
+  z-index: 10;
 }
 .mainNav ul {
   display: -webkit-box;
@@ -502,6 +503,7 @@ header {
   background-position: center;
   width: 70%;
   height: 80vh;
+  opacity: 80%;
 }
 
 header .textContainer {
@@ -514,6 +516,14 @@ header .textContainer {
   background-color: #C9CABD;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+}
+
+.brush {
+  background-image: url(../assets/images/brush-stroke-banner-5.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  display: inline-block;
 }
 
 .about {
