@@ -41,7 +41,8 @@ h2 {
 
 h3 {
     color: #16100E;
-    font-size: 3.47rem;
+    // font-size: 3.47rem;
+    font-size: 3.2rem;
     letter-spacing: 1px;
     font-weight: 400;
     padding-bottom: 5%;
@@ -71,6 +72,10 @@ h4 {
     color: $textColourPrimary;
     font-size: 3rem;
     padding: 0;
+}
+
+.about h2 {
+    color: $textColourPrimary;
 }
 
 .about p {
@@ -121,12 +126,14 @@ h4 {
     letter-spacing: 2px;
 }
 
-.project2 .taglineNumber {
+.project2 .taglineNumber,
+.project1 .taglineNumber {
     border-bottom: 1px solid $textColourPrimary;
 }
 
 .skills h2 {
-    color: $textColourPrimary;
+    // color: $textColourPrimary;
+    color: $backgroundTertiary;
     text-align: center;
     padding: 5% 0;
 }
@@ -138,7 +145,8 @@ h4 {
     font-size: 1rem;
 }
 
-.featuredProjects a {
+// .featuredProjects a 
+.featuredLink {
     font-family: $headingFont;
     font-size: 1.2rem;
     color: #FFF;
@@ -151,9 +159,25 @@ h4 {
     //     background-color: $backgroundPrimary;
     //     color: $textColourPrimary;
     // }
+    &::after {
+        content: url(../assets/images/Arrow-White-Right.png);
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        transform: rotate(315deg);
+    }
 }
 
-.featuredProjects .project2 .textContainer {
+.projectDescription a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        border-bottom: 2px solid red;
+        background-color: teal;
+    }
+}
+
+.featuredProjects .project2 .textContainer, .featuredProjects .project1 .textContainer {
     * {
         color: $textColourPrimary;
     }
