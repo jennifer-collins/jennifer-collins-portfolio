@@ -21,18 +21,25 @@
         // justify-content: space-between;
         width: 20%;
         padding-bottom: 5%;
+        &:hover,
+        &:focus {
+            color: $backgroundSecondary;
+            transform: scale(105%);
+            transition: 0.2s ease;
+        }
     }
 }
 
 .skillsList {
     i {
         font-size: 4rem;
-        color: #FFF;
+        // color: #FFF;
+        color: $backgroundSecondary;
         padding-bottom: 10%;
-        &:hover,
-        &:focus {
-            color: $backgroundSecondary;
-        }
+        // &:hover,
+        // &:focus {
+        //     color: $backgroundSecondary;
+        // }
     }   
 }
 

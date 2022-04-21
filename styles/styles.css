@@ -387,8 +387,9 @@ h4 {
 }
 .featuredLink::after {
   content: url(../assets/images/Arrow-White-Right.png);
-  width: 20px;
-  height: 20px;
+  width: 55px;
+  height: 30px;
+  padding-left: 1.5%;
   display: inline-block;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
@@ -398,8 +399,7 @@ h4 {
   text-decoration: none;
 }
 .projectDescription a:hover, .projectDescription a:focus {
-  border-bottom: 2px solid red;
-  background-color: teal;
+  border-bottom: 2px dashed #202316;
 }
 
 .featuredProjects .project2 .textContainer *, .featuredProjects .project1 .textContainer * {
@@ -411,7 +411,7 @@ footer p {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  color: #FFF;
+  color: #16100E;
   font-size: 1rem;
 }
 
@@ -455,7 +455,7 @@ button:hover, button:focus {
 }
 
 footer {
-  background-color: #202316;
+  background-color: #C9CABD;
   padding: 1%;
 }
 
@@ -640,14 +640,18 @@ header .textContainer {
   width: 20%;
   padding-bottom: 5%;
 }
+.skillsList li:hover, .skillsList li:focus {
+  color: #202316;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
 
 .skillsList i {
   font-size: 4rem;
-  color: #FFF;
-  padding-bottom: 10%;
-}
-.skillsList i:hover, .skillsList i:focus {
   color: #202316;
+  padding-bottom: 10%;
 }
 
 .skills .brush {
@@ -794,7 +798,7 @@ header .textContainer {
 }
 
 .contact {
-  background-color: #C9CABD;
+  background-color: #202316;
   padding: 5%;
 }
 
@@ -819,6 +823,7 @@ header .textContainer {
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 1rem;
+  color: #FFF;
 }
 .contactText a {
   margin-bottom: 2%;
@@ -827,7 +832,7 @@ header .textContainer {
   color: #16100E;
 }
 .contactText a:hover, .contactText a:focus {
-  border-bottom: 1px solid #202316;
+  border-bottom: 1px solid #C9CABD;
 }
 
 .contactForm {
@@ -852,60 +857,61 @@ header .textContainer {
   color: #FFF;
 }
 .socialIcons i:hover, .socialIcons i:focus {
-  color: #202316;
+  color: #C9CABD;
 }
 
 input, textarea {
   padding: 0 0 10px 5px;
   border: none;
   margin-bottom: 5%;
-  color: #333;
-  background-color: #C9CABD;
+  background-color: #202316;
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::placeholder, textarea::placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input:hover, input:focus, textarea:hover, textarea:focus {
-  border-bottom: 2px solid #202316;
+  border-bottom: 2px dashed #C9CABD;
 }
 
 input {
   border: none;
   border-bottom: 2px solid #D8D8D8;
+  color: #FFF;
+  letter-spacing: 2px;
 }
 
 textarea {
@@ -913,10 +919,12 @@ textarea {
   min-height: 130px;
   border-bottom: 2px solid #D8D8D8;
   border-top: none;
+  color: #FFF;
+  letter-spacing: 2px;
 }
 
 .contact .brush {
-  background-image: url(../assets/images/brush-stroke-banner-5.svg);
+  background-image: url(../assets/images/brush-stroke-banner-5-beige.svg);
   background-repeat: no-repeat;
   background-size: 100% 95%;
   padding: 8px 0;
@@ -947,7 +955,8 @@ textarea {
 
   .project4 .wrapper,
 .project3 .wrapper,
-.project2 .wrapper {
+.project2 .wrapper,
+.project1 .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -966,7 +975,8 @@ textarea {
             align-items: center;
   }
 
-  .project2 .contentContainer {
+  .project2 .contentContainer,
+.project1 .contentContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1041,6 +1051,26 @@ textarea {
   }
 }
 @media (max-width: 600px) {
+  .mainNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5%;
+  }
+  .mainNav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainNav ul li {
+    margin-right: 0;
+  }
+
+  .mainNav ul li:first-child {
+    display: none;
+  }
+
   .skillsList li {
     width: 35%;
   }
@@ -1062,6 +1092,10 @@ textarea {
     text-align: center;
   }
 
+  h2 {
+    font-size: 4rem;
+  }
+
   .projectFrameworks p {
     font-size: 0.8rem;
   }
@@ -1076,11 +1110,19 @@ textarea {
     line-height: 24px;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   .skills .skillsList p {
     font-size: 0.7rem;
   }
 
   .skillsList li {
     margin: 0 4% 0 4%;
+  }
+
+  .contactText h3 {
+    font-size: 2.5rem;
   }
 }
