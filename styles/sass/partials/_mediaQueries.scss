@@ -117,6 +117,16 @@
 
 }
 
+@media (max-width: 660px){
+    h1 {
+        font-size: 3.8rem;
+    }
+    header .textContainer {
+        bottom: 55%;
+        left: 9%;
+    }
+}
+
 
 @media (max-width: 600px){
     .mainNav {
@@ -144,7 +154,22 @@
         }
     }
 
+    h1 {
+        font-size: 3.4rem;
+    }
+
 }
+
+// @media (max-width: 560px) {
+//     h1 {
+//         font-size: 3.4rem;
+//     }
+    
+//     header .textContainer {
+//         bottom: 55%;
+//         left: 9%;
+//     }
+// }
 
 @media (max-width: 500px){
 .about .textContainer p {
