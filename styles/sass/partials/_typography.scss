@@ -21,12 +21,16 @@ h1, h2, h3, h4 {
 
 h1 {
     letter-spacing: 2.04px;
-    color: #16100E;
-    // color: #FFF;
+    // color: #16100E;
+    color: #FFF;
     font-size: 4.5rem;
     // font-size: 5rem;
     font-weight: 400;
     margin: 0;
+    // background-image: url(../assets/images/brush-stroke-banner-3.svg);
+    // background-size: 100% 95%;
+    // padding: 8px 0;
+    // display: inline-block;
     // padding-bottom: 1%;
     // line-height: 95px;
 }
@@ -41,7 +45,8 @@ h2 {
 
 h3 {
     color: #16100E;
-    font-size: 3.47rem;
+    // font-size: 3.47rem;
+    font-size: 3.2rem;
     letter-spacing: 1px;
     font-weight: 400;
     padding-bottom: 5%;
@@ -53,6 +58,7 @@ h4 {
     font-size: 3.15rem;
     letter-spacing: 0.9px;
     font-weight: 400;
+    padding: 10% 0;
 }
 
 .mainNav a {
@@ -70,6 +76,10 @@ h4 {
     color: $textColourPrimary;
     font-size: 3rem;
     padding: 0;
+}
+
+.about h2 {
+    color: $textColourPrimary;
 }
 
 .about p {
@@ -120,12 +130,14 @@ h4 {
     letter-spacing: 2px;
 }
 
-.project2 .taglineNumber {
+.project2 .taglineNumber,
+.project1 .taglineNumber {
     border-bottom: 1px solid $textColourPrimary;
 }
 
 .skills h2 {
-    color: $textColourPrimary;
+    // color: $textColourPrimary;
+    color: $backgroundTertiary;
     text-align: center;
     padding: 5% 0;
 }
@@ -137,32 +149,96 @@ h4 {
     font-size: 1rem;
 }
 
-.featuredProjects a {
-    font-family: $headingFont;
-    font-size: 1.2rem;
-    color: #FFF;
-    padding: 2% 5% 2% 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    // &:hover,
-    // &:focus {
-    //     padding-left: 5%;
-    //     background-color: $backgroundPrimary;
-    //     color: $textColourPrimary;
-    // }
-}
-
-.featuredProjects .project2 .textContainer {
+// .featuredProjects a 
+.featuredProjects .project2 .textContainer, .featuredProjects .project1 .textContainer {
     * {
         color: $textColourPrimary;
     }
 }
+
+.featuredLink {
+    font-family: $headingFont;
+    font-size: 1.2rem;
+//     padding: 2% 5% 2% 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+// .featuredLink {
+    .project2 .featuredLink,
+    .project1 .featuredLink {
+    // font-family: $headingFont;
+    // font-size: 1.2rem;
+    color: #FFF;
+    // padding: 2% 5% 2% 0;
+    padding: 2% 2%;
+    // text-transform: uppercase;
+    // letter-spacing: 1px;
+    border: 1px solid $backgroundPrimary;
+    // padding: 2%;
+    margin-right: 2%;
+    &:hover,
+    &:focus {
+        // padding-left: 5%;
+        background-color: $backgroundSecondary;
+        color: #FFF;
+        border: 1px solid $backgroundPrimary;
+        border-radius: 30px;
+        // padding: 2%;
+        // margin-right: 2%;
+    }
+    // &::after {
+    //     content: url(../assets/images/Arrow-White-Right.png);
+    //     // width: 20px;
+    //     // height: 20px;
+    //     width: 55px;
+    //     height: 30px;
+    //     padding-left: 1.5%;
+    //     display: inline-block;
+    //     transform: rotate(315deg);
+    // }
+}
+
+.project4 .featuredLink,
+.project3 .featuredLink {
+        // font-family: $headingFont;
+        // font-size: 1.2rem;
+        // padding: 2% 5% 2% 2%;
+        padding: 2% 2%;
+        // text-transform: uppercase;
+        // letter-spacing: 1px;
+        color: #FFF;
+        border: 1px solid $backgroundSecondary;
+        margin-right: 2%;
+        text-align: center;
+        &:hover,
+        &:focus {
+            // padding-left: 5%;
+            background-color: $backgroundPrimary;
+            color: $textColourPrimary;
+            border: 1px solid $backgroundPrimary;
+            border-radius: 30px;
+            // text-decoration: none;
+            // margin-right: 2%;
+        }
+    }
+
+
+.projectDescription a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        border-bottom: 2px dashed $backgroundSecondary;
+    }
+}
+
 
 footer p {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
-    color: #FFF;
+    // color: #FFF;
+    color: $textColourPrimary;
     font-size: 1rem;        
     }

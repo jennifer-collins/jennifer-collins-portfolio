@@ -265,7 +265,7 @@ h1, h2, h3, h4 {
 
 h1 {
   letter-spacing: 2.04px;
-  color: #16100E;
+  color: #FFF;
   font-size: 4.5rem;
   font-weight: 400;
   margin: 0;
@@ -280,7 +280,7 @@ h2 {
 
 h3 {
   color: #16100E;
-  font-size: 3.47rem;
+  font-size: 3.2rem;
   letter-spacing: 1px;
   font-weight: 400;
   padding-bottom: 5%;
@@ -291,6 +291,7 @@ h4 {
   font-size: 3.15rem;
   letter-spacing: 0.9px;
   font-weight: 400;
+  padding: 10% 0;
 }
 
 .mainNav a {
@@ -307,6 +308,10 @@ h4 {
   color: #16100E;
   font-size: 3rem;
   padding: 0;
+}
+
+.about h2 {
+  color: #16100E;
 }
 
 .about p {
@@ -354,12 +359,13 @@ h4 {
   letter-spacing: 2px;
 }
 
-.project2 .taglineNumber {
+.project2 .taglineNumber,
+.project1 .taglineNumber {
   border-bottom: 1px solid #16100E;
 }
 
 .skills h2 {
-  color: #16100E;
+  color: #FCFCFA;
   text-align: center;
   padding: 5% 0;
 }
@@ -371,17 +377,55 @@ h4 {
   font-size: 1rem;
 }
 
-.featuredProjects a {
+.featuredProjects .project2 .textContainer *, .featuredProjects .project1 .textContainer * {
+  color: #16100E;
+}
+
+.featuredLink {
   font-family: "Bigilla";
   font-size: 1.2rem;
-  color: #FFF;
-  padding: 2% 5% 2% 0;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.featuredProjects .project2 .textContainer * {
+.project2 .featuredLink,
+.project1 .featuredLink {
+  color: #FFF;
+  padding: 2% 2%;
+  border: 1px solid #C9CABD;
+  margin-right: 2%;
+}
+.project2 .featuredLink:hover, .project2 .featuredLink:focus,
+.project1 .featuredLink:hover,
+.project1 .featuredLink:focus {
+  background-color: #202316;
+  color: #FFF;
+  border: 1px solid #C9CABD;
+  border-radius: 30px;
+}
+
+.project4 .featuredLink,
+.project3 .featuredLink {
+  padding: 2% 2%;
+  color: #FFF;
+  border: 1px solid #202316;
+  margin-right: 2%;
+  text-align: center;
+}
+.project4 .featuredLink:hover, .project4 .featuredLink:focus,
+.project3 .featuredLink:hover,
+.project3 .featuredLink:focus {
+  background-color: #C9CABD;
   color: #16100E;
+  border: 1px solid #C9CABD;
+  border-radius: 30px;
+}
+
+.projectDescription a {
+  text-decoration: none;
+}
+.projectDescription a:hover, .projectDescription a:focus {
+  border-bottom: 2px dashed #202316;
 }
 
 footer p {
@@ -389,7 +433,7 @@ footer p {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300;
-  color: #FFF;
+  color: #16100E;
   font-size: 1rem;
 }
 
@@ -433,7 +477,7 @@ button:hover, button:focus {
 }
 
 footer {
-  background-color: #202316;
+  background-color: #C9CABD;
   padding: 1%;
 }
 
@@ -455,7 +499,7 @@ header {
   position: fixed;
   width: 100vw;
   border-bottom: 2px solid #D8D8D8;
-  top: 10px;
+  z-index: 10;
 }
 .mainNav ul {
   display: -webkit-box;
@@ -502,18 +546,28 @@ header {
   background-position: center;
   width: 70%;
   height: 80vh;
+  opacity: 80%;
 }
 
 header .textContainer {
   position: absolute;
   bottom: 40%;
   left: 10%;
+  text-align: center;
 }
 
 .scrollActive {
   background-color: #C9CABD;
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
+}
+
+.brush {
+  background-image: url(../assets/images/brush-stroke-banner-3.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  display: inline-block;
 }
 
 .about {
@@ -568,6 +622,14 @@ header .textContainer {
   display: block;
 }
 
+.about .brushBeige {
+  background-image: url(../assets/images/brush-stroke-banner-5-beige.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  display: block;
+}
+
 .skills {
   background-color: #C9CABD;
   padding: 5% 0;
@@ -601,26 +663,34 @@ header .textContainer {
   width: 20%;
   padding-bottom: 5%;
 }
+.skillsList li:hover, .skillsList li:focus {
+  color: #202316;
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
 
 .skillsList i {
   font-size: 4rem;
-  color: #FFF;
+  color: #202316;
   padding-bottom: 10%;
 }
-.skillsList i:hover, .skillsList i:focus {
-  color: #202316;
+
+.skills .brush {
+  background-image: url(../assets/images/brush-stroke-banner-5.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  display: block;
 }
 
-.project1 {
-  background-color: #202316;
-}
-
-.project2 {
+.project2, .project1 {
   background-color: #C9CABD;
   padding: 10% 0;
 }
 
-.project2 .wrapper {
+.project2 .wrapper, .project1 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,7 +703,7 @@ header .textContainer {
           flex-direction: row-reverse;
 }
 
-.project2 .contentContainer {
+.project2 .contentContainer, .project1 .contentContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,7 +717,7 @@ header .textContainer {
   margin-right: 5%;
   width: 50%;
 }
-.project2 .contentContainer .projectFrameworks {
+.project2 .contentContainer .projectFrameworks, .project1 .contentContainer .projectFrameworks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -657,7 +727,7 @@ header .textContainer {
           flex-direction: row;
   margin-bottom: 5%;
 }
-.project2 .contentContainer .projectFrameworks li {
+.project2 .contentContainer .projectFrameworks li, .project1 .contentContainer .projectFrameworks li {
   margin-right: 2%;
   letter-spacing: 2px;
 }
@@ -672,7 +742,7 @@ header .textContainer {
   color: #FFF;
 }
 
-.project2 .imageContainer {
+.project2 .imageContainer, .project1 .imageContainer {
   min-width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,7 +751,7 @@ header .textContainer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.project2 .imageContainer img {
+.project2 .imageContainer img, .project1 .imageContainer img {
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -751,7 +821,7 @@ header .textContainer {
 }
 
 .contact {
-  background-color: #C9CABD;
+  background-color: #202316;
   padding: 5%;
 }
 
@@ -776,6 +846,7 @@ header .textContainer {
   letter-spacing: 1px;
   line-height: 28px;
   font-size: 1rem;
+  color: #FFF;
 }
 .contactText a {
   margin-bottom: 2%;
@@ -784,7 +855,7 @@ header .textContainer {
   color: #16100E;
 }
 .contactText a:hover, .contactText a:focus {
-  border-bottom: 1px solid #202316;
+  border-bottom: 1px solid #C9CABD;
 }
 
 .contactForm {
@@ -809,60 +880,61 @@ header .textContainer {
   color: #FFF;
 }
 .socialIcons i:hover, .socialIcons i:focus {
-  color: #202316;
+  color: #C9CABD;
 }
 
 input, textarea {
   padding: 0 0 10px 5px;
   border: none;
   margin-bottom: 5%;
-  color: #333;
-  background-color: #C9CABD;
+  background-color: #202316;
   font-family: "Open Sans", sans-serif;
   width: 100%;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::-moz-placeholder, textarea::-moz-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::-ms-input-placeholder, textarea::-ms-input-placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input::placeholder, textarea::placeholder {
   font-size: 0.8rem;
-  color: #16100E;
+  color: #FFF;
   opacity: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 input:hover, input:focus, textarea:hover, textarea:focus {
-  border-bottom: 2px solid #202316;
+  border-bottom: 2px dashed #C9CABD;
 }
 
 input {
   border: none;
   border-bottom: 2px solid #D8D8D8;
+  color: #FFF;
+  letter-spacing: 2px;
 }
 
 textarea {
@@ -870,6 +942,16 @@ textarea {
   min-height: 130px;
   border-bottom: 2px solid #D8D8D8;
   border-top: none;
+  color: #FFF;
+  letter-spacing: 2px;
+}
+
+.contact .brush {
+  background-image: url(../assets/images/brush-stroke-banner-5-beige.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 95%;
+  padding: 8px 0;
+  display: block;
 }
 
 @media (max-width: 1000px) {
@@ -896,7 +978,8 @@ textarea {
 
   .project4 .wrapper,
 .project3 .wrapper,
-.project2 .wrapper {
+.project2 .wrapper,
+.project1 .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -915,7 +998,8 @@ textarea {
             align-items: center;
   }
 
-  .project2 .contentContainer {
+  .project2 .contentContainer,
+.project1 .contentContainer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -989,7 +1073,37 @@ textarea {
     margin: 0 auto;
   }
 }
+@media (max-width: 660px) {
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  header .textContainer {
+    bottom: 55%;
+    left: 9%;
+  }
+}
 @media (max-width: 600px) {
+  .mainNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 5%;
+  }
+  .mainNav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainNav ul li {
+    margin-right: 0;
+  }
+
+  .mainNav ul li:first-child {
+    display: none;
+  }
+
   .skillsList li {
     width: 35%;
   }
@@ -1000,6 +1114,10 @@ textarea {
   footer p {
     font-size: 0.8rem;
   }
+
+  h1 {
+    font-size: 3.4rem;
+  }
 }
 @media (max-width: 500px) {
   .about .textContainer p {
@@ -1009,6 +1127,10 @@ textarea {
   .about .textContainer a {
     width: 100%;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 
   .projectFrameworks p {
@@ -1025,11 +1147,19 @@ textarea {
     line-height: 24px;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   .skills .skillsList p {
     font-size: 0.7rem;
   }
 
   .skillsList li {
     margin: 0 4% 0 4%;
+  }
+
+  .contactText h3 {
+    font-size: 2.5rem;
   }
 }

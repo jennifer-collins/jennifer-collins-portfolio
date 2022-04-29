@@ -1,5 +1,6 @@
 .contact {
-    background-color: $backgroundPrimary;
+    // background-color: $backgroundPrimary;
+    background-color: $backgroundSecondary;
     padding: 5%;
 }
 
@@ -19,6 +20,7 @@
         letter-spacing: 1px;
         line-height: 28px;
         font-size: 1rem;
+        color: #FFF;
     }
     a {
         margin-bottom: 2%;
@@ -27,7 +29,8 @@
         color: $textColourPrimary;
         &:hover,
         &:focus {
-            border-bottom: 1px solid $backgroundSecondary;
+            // border-bottom: 1px solid $backgroundSecondary;
+            border-bottom: 1px solid $backgroundPrimary;
         }
     }
 }
@@ -50,7 +53,8 @@
         color: #FFF;
         &:hover,
         &:focus {
-            color: $backgroundSecondary;
+            // color: $backgroundSecondary;
+            color: $backgroundPrimary;
         }
     }
 }
@@ -62,13 +66,16 @@ input, textarea {
     padding: 0 0 10px 5px;
     border: none;
     margin-bottom: 5%;
-    color: #333;
-    background-color: $backgroundPrimary;
+    // color: #333;
+    // color: #FFF;
+    // background-color: $backgroundPrimary;
+    background-color: $backgroundSecondary;
     font-family: $bodyFont;
     width: 100%;
     &::placeholder{
         font-size: 0.8rem;
-        color: $textColourPrimary;
+        // color: $textColourPrimary;
+        color: #FFF;
         opacity: 1;
         // line-height: 1.2rem;
         text-transform: uppercase;
@@ -76,13 +83,17 @@ input, textarea {
     }
     &:hover,
     &:focus {
-        border-bottom: 2px solid $backgroundSecondary;
+        // border-bottom: 2px solid $backgroundSecondary;
+        border-bottom: 2px dashed $backgroundPrimary;
+        // background-color: rgba($backgroundPrimary, 0.5);
     }
 }
 
 input {
     border: none;
     border-bottom: 2px solid $lineColor; 
+    color: #FFF;
+    letter-spacing: 2px;
 }
 
 textarea {
@@ -90,4 +101,15 @@ textarea {
     min-height: 130px;
     border-bottom: 2px solid $lineColor;
     border-top: none;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.contact .brush {
+    background-image: url(../assets/images/brush-stroke-banner-5-beige.svg);
+    background-repeat: no-repeat;
+    // background-color: blue;
+    background-size: 100% 95%;
+    padding: 8px 0;
+    display: block;
 }
