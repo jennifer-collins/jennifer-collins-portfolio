@@ -286,6 +286,10 @@ h3 {
   padding-bottom: 5%;
 }
 
+.contact h3 {
+  color: #FFF;
+}
+
 h4 {
   color: #16100E;
   font-size: 3.15rem;
